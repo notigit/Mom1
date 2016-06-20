@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_top_view"
+        layout="@layout/activity_top_item" />
+
+    <TextView
+        android:id="@+id/fetus_growth_tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/activity_top_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/draw_circle_blue_bg"
+        android:gravity="center"
+        android:text="太胖"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_25" />
+
+    <LinearLayout
+        android:id="@+id/fetus_growth_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetus_growth_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fetus_growth_baby_weight_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="胎儿体重为：82.6"
+            android:textColor="#474747"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:id="@+id/fetus_growth_range_values_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:text="本次体重参考范围：22"
+            android:textColor="#474747"
+            android:textSize="@dimen/size_dp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fetus_growth_data_lay"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetus_growth_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="本次B超参考值范围"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="双顶径cm"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:id="@+id/fetus_growth_bpd_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="腹围cm"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:id="@+id/fetus_growth_abdominal_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="股骨长cm"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:id="@+id/fetus_growth_bone_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetus_growth_data_lay"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#474747"
+        android:lineSpacingExtra="3dp"
+        android:text="注意：\n\t\t\t由于选择使用对比的数据库不同，再加上胎儿的姿势、先天遗传的因素，以及使用的B超仪器的精确度，都会影响对胎儿体重的判读。如果对胎儿体重存在较大的疑惑，请到医院寻求专业帮助。"
+        android:textSize="@dimen/size_dp_14" />
+</RelativeLayout>

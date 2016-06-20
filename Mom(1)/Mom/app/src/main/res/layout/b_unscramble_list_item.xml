@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="1dp"
+        android:clickable="false"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/b_unscramble_title_tv"
+            style="@style/BaseItemText"
+            android:textColor="#6F6F6F" />
+
+        <TextView
+            android:id="@+id/b_unscramble_data_tv"
+            style="@style/BaseItemGrayText"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/app_top_color" />
+
+        <View
+            style="@style/CommonArrow"
+            android:background="@drawable/app_arrow_right_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="home_pandect_tv">总览</string>
+    <string name="home_sports_tv">运动</string>
+    <string name="home_weight_tv">体重</string>
+    <string name="home_symptom_tv">症状</string>
+
+    <string name="day_sports_tv">今日运动</string>
+    <string name="day_symptom_tv">今日症状</string>
+    <string name="day_weight_tv">今日体重</string>
+
+
+</resources>

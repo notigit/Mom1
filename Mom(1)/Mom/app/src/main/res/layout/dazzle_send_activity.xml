@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dazzle_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_top_view"
+        layout="@layout/activity_top_item" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_top_view"
+        android:layout_marginLeft="50dp"
+        android:background="@color/app_top_color" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/activity_top_view"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tools_draw_circle_bg" />
+
+
+    <RelativeLayout
+        android:id="@+id/dazzle_ray"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/activity_top_view"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+
+        <EditText
+            android:id="@+id/dazzle_send_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="记录一下吧……"
+            android:maxLength="150"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+
+        <RelativeLayout
+            android:id="@+id/dazzle_send_bottom_ray"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/dazzle_send_select_phone_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/dazzle_send_select_phone_icon" />
+
+            <ImageView
+                android:id="@+id/dazzle_send_top_phone_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/dazzle_send_select_phone_iv"
+                android:src="@drawable/dazzle_send_top_phone_icon" />
+
+            <TextView
+                android:id="@+id/dazzle_send_change_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="0/100"
+                android:textColor="#737373"
+                android:textSize="@dimen/size_dp_14" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dazzle_send_select_picture_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/dazzle_ray"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/dazzle_send_select_delete_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/dazzle_ray"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/dazzle_send_select_picture_iv"
+        android:src="@drawable/dazzle_send_select_delete_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

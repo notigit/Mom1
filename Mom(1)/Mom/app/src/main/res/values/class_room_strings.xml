@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="arly_pregnancy_tv">孕早期</string>
+    <string name="mid_pregnancy_tv">孕中期</string>
+    <string name="late_pregnancy_tv">孕晚期</string>
+
+
+</resources>

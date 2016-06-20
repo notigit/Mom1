@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:weightSum="4">
+
+    <RelativeLayout
+        android:id="@+id/main_home_ray"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/main_home_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_tab_home_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_home_iv"
+            android:layout_alignRight="@+id/main_home_iv"
+            android:layout_below="@+id/main_home_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/main_home_tv"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/size_dp_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_class_room_ray"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_class_room_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_tab_class_room_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_class_room_iv"
+            android:layout_alignRight="@+id/main_class_room_iv"
+            android:layout_below="@+id/main_class_room_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/main_class_room_tv"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/size_dp_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_found_ray"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_found_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_tab_found_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_found_iv"
+            android:layout_alignRight="@+id/main_found_iv"
+            android:layout_below="@+id/main_found_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/main_found_tv"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/size_dp_12" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_my_ray"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_my_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_tab_my_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/main_my_iv"
+            android:layout_alignRight="@+id/main_my_iv"
+            android:layout_below="@+id/main_my_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/main_my_tv"
+            android:textColor="@color/tab_text_color"
+            android:textSize="@dimen/size_dp_12" />
+    </RelativeLayout>
+
+
+</LinearLayout>

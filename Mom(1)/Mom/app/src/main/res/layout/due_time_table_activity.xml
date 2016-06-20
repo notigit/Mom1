@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dazzle_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+
+    <ListView
+        android:id="@+id/due_time_table_lt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/due_time_single_item"
+        android:scrollbars="none" />
+
+</LinearLayout>

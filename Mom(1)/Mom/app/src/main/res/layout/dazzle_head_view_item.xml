@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.xiaoaitouch.mom.view.RoundedImageView
+        android:id="@+id/user_head_image_iv"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/user_default_icon"
+        app:border_color="@color/app_top_color"
+        app:border_width="2dip"
+        app:corner_radius="90dp"
+        app:mutate_background="true"
+        app:oval="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="105dp"
+            android:background="@color/app_top_color" />
+
+        <RelativeLayout
+            android:id="@+id/dazzle_list_top_tips_ray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/top_vertical_lines"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="105dp"
+                android:background="@color/app_top_color" />
+
+            <View
+                android:id="@+id/top_draw_circle_view"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/top_vertical_lines"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/tools_draw_circle_bg" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/top_draw_circle_view"
+                android:layout_marginLeft="105dp"
+                android:background="@color/app_top_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/top_vertical_lines"
+                android:background="@drawable/card_bg"
+                android:padding="6dp"
+                android:text="还没有数据哦，快去记录吧~"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

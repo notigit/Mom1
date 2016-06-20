@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <ScrollView
+        android:id="@+id/due_time_details_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/size_dp_12">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/due_time_details_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/due_time_details_week_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/due_time_befor_color"
+                        android:textSize="@dimen/size_dp_15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/due_time_details_is_select_tv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/due_time_details_no_select_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/due_time_details_due_time_ray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:padding="@dimen/size_dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="产检时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <TextView
+                    android:id="@+id/due_time_details_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/common_icon_arrow"
+                    android:textColor="@color/app_top_color"
+                    android:textSize="@dimen/size_dp_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/due_time_details_due_time_lay"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/due_time_details_middle_ray">
+
+                    <com.xiaoaitouch.mom.view.CommonWheelView
+                        android:id="@+id/due_time_details_year_view"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        app:selectionDividerActiveAlpha="255"
+                        app:selectionDividerDimmedAlpha="255"
+                        app:selectionDividerHeight="1px"
+                        app:visibleItems="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/due_time_details_year_view"
+                        android:gravity="center_vertical"
+                        android:text="年"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_24" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/due_time_details_middle_ray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+                    <com.xiaoaitouch.mom.view.CommonWheelView
+                        android:id="@+id/due_time_details_mouch_view"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        app:selectionDividerActiveAlpha="255"
+                        app:selectionDividerDimmedAlpha="255"
+                        app:selectionDividerHeight="1px"
+                        app:visibleItems="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/due_time_details_mouch_view"
+                        android:gravity="center_vertical"
+                        android:text="月"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_24" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/due_time_details_middle_ray">
+
+                    <com.xiaoaitouch.mom.view.CommonWheelView
+                        android:id="@+id/due_time_details_day_view"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        app:selectionDividerActiveAlpha="255"
+                        app:selectionDividerDimmedAlpha="255"
+                        app:selectionDividerHeight="1px"
+                        app:visibleItems="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/due_time_details_day_view"
+                        android:gravity="center_vertical"
+                        android:text="日"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_dp_24" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/due_time_details_remind_time_ray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:padding="@dimen/size_dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提醒时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <TextView
+                    android:id="@+id/due_time_details_remind_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/common_icon_arrow"
+                    android:textColor="@color/app_top_color"
+                    android:textSize="@dimen/size_dp_16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/due_time_choose_remind_lay"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <com.xiaoaitouch.mom.view.CommonWheelView
+                    android:id="@+id/due_time_choose_day_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:selectionDividerActiveAlpha="255"
+                    app:selectionDividerDimmedAlpha="255"
+                    app:selectionDividerHeight="1px"
+                    app:visibleItems="3" />
+
+                <com.xiaoaitouch.mom.view.CommonWheelView
+                    android:id="@+id/due_time_choose_hour_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    app:selectionDividerActiveAlpha="255"
+                    app:selectionDividerDimmedAlpha="255"
+                    app:selectionDividerHeight="1px"
+                    app:visibleItems="5" />
+
+                <com.xiaoaitouch.mom.view.CommonWheelView
+                    android:id="@+id/due_time_choose_minute_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    app:selectionDividerActiveAlpha="255"
+                    app:selectionDividerDimmedAlpha="255"
+                    app:selectionDividerHeight="1px"
+                    app:visibleItems="5" />
+            </LinearLayout>
+
+
+            <WebView
+                android:id="@+id/due_time_details_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                tools:ignore="WebViewLayout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

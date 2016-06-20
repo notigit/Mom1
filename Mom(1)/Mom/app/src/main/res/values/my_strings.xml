@@ -1,0 +1,33 @@
+<resources>
+
+<string name="my_material_tv">资料</string>
+    <string name="my_collection_tv">收藏</string>
+    <string name="my_equipment_tv">设备</string>
+    <string name="my_gift_certificate_tv">礼券</string>
+    <string name="my_due_album_tv">产检相册</string>
+    <string name="my_setting_tv">设置</string>
+
+    <string name="my_information_due_tv">预产期</string>
+    <string name="my_information_hight_tv">身高</string>
+    <string name="my_information_age_tv">年龄</string>
+
+    <string name="setting_user_feedback_tv">用户反馈</string>
+    <string name="setting_official_tv">官网</string>
+    <string name="setting_weibo_tv">微博</string>
+    <string name="setting_weixin_tv">微信</string>
+    <string name="setting_tell_tv">电话</string>
+
+
+    <string name="setting_about_tv">关于</string>
+    <string name="setting_user_agreement_tv">用户协议</string>
+    <string name="setting_clear_cache_tv">清除缓存</string>
+    <string name="setting_out_login_tv">退出登录</string>
+
+    <string name="setting_due_activity">设置预产期</string>
+    <string name="setting_due_input_date_tv">输入预产期</string>
+    <string name="setting_due_calculation_date_tv">计算预产期</string>
+
+    <string name="setting_due_input_tips">请输入产检时医生告知的预产期，如尚未产检请使右侧用计算预产期。</string>
+    <string name="setting_due_calculation_tips">请填写下面月经详情，妈咪神器自动为您计算出预产期。</string>
+
+</resources>

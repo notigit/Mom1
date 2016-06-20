@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.xiaoaitouch.mom"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 30005
+        versionName '3.5'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:22.2.1'
+    compile files('libs/easemobchat_2.2.5.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/DevsmartAndroid_fat.jar')
+    compile files('libs/volley.jar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/baidumapapi_v3_5_0.jar')
+    compile files('libs/locSDK_5.2.jar')
+    compile files('libs/umeng-analytics-v5.6.4.jar')
+    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/ble2.2.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+}

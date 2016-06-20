@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/setting_clear_cache_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_clear_cache_tv"
+                    android:textColor="@color/black" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/setting_user_feedback_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_user_feedback_tv"
+                    android:textColor="@color/black" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_official_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_official_tv"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/setting_official_tv"
+                    style="@style/BaseItemGrayText"
+                    android:layout_marginRight="35dp"
+                    android:text="http://www.likemami.com" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_weibo_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_weibo_tv"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/setting_weibo_tv"
+                    style="@style/BaseItemGrayText"
+                    android:layout_marginRight="35dp" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_weixin_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_weixin_tv"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/setting_weixin_tv"
+                    style="@style/BaseItemGrayText"
+                    android:layout_marginRight="35dp"
+                    android:text="aiShoes20151010" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_tell_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_tell_tv"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/setting_tell_tv"
+                    style="@style/BaseItemGrayText"
+                    android:layout_marginRight="35dp"
+                    android:text="4000110883" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_about_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_about_tv"
+                    android:textColor="@color/black" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_user_agreement_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:text="@string/setting_user_agreement_tv"
+                    android:textColor="@color/black" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/setting_out_login_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/setting_out_login_tv"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_dp_18" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

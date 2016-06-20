@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <RelativeLayout
+        android:id="@+id/my_information_due_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:text="@string/my_information_due_tv"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/my_information_due_tv"
+            style="@style/BaseItemGrayText"
+            android:layout_marginRight="35dp" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_information_hight_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:text="@string/my_information_hight_tv"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/my_information_hight_tv"
+            style="@style/BaseItemGrayText"
+            android:layout_marginRight="35dp" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_information_age_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:text="@string/my_information_age_tv"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/my_information_age_tv"
+            style="@style/BaseItemGrayText"
+            android:layout_marginRight="35dp" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/record_contractions_tips_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="连续3次间隔小于五分钟就需要去医院了"
+            android:textColor="#7D7D7D"
+            android:textSize="@dimen/size_dp_16" />
+
+
+        <TextView
+            android:id="@+id/record_contractions_time_show_tv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/record_contractions_tips_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/draw_circle_default_bg"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/record_contractions_event_tv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/record_contractions_time_show_tv"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/georama_bg"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="@color/app_top_color"
+            android:textSize="@dimen/size_dp_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/app_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.26"
+                android:gravity="center"
+                android:text="开始时间"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.26"
+                android:gravity="center"
+                android:text="持续时间"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.26"
+                android:gravity="center"
+                android:text="间隔时间"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.22"
+                android:gravity="center"
+                android:text="结果"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/size_dp_16" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bg" />
+
+    </LinearLayout>
+</LinearLayout>

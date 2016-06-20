@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <RelativeLayout
+        android:id="@+id/user_head_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:text="头像"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/user_head_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/user_default_icon" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_nickname_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:text="昵称"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/user_nickname_tv"
+            style="@style/BaseItemGrayText"
+            android:layout_marginRight="35dp" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+
+</LinearLayout>

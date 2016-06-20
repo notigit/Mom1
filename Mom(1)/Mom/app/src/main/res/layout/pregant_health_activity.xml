@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_top_view"
+        layout="@layout/activity_top_item" />
+
+    <TextView
+        android:id="@+id/pregnant_health_tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/activity_top_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/draw_circle_blue_bg"
+        android:gravity="center"
+        android:text="太胖"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_25" />
+
+    <LinearLayout
+        android:id="@+id/pregnant_health_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregnant_health_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pregnant_health_bmi_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="您的体重指数BMI为：82.6"
+            android:textColor="#474747"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:id="@+id/pregnant_health_weight_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:text="整个孕期的理想增中为：82.6公斤"
+            android:textColor="#474747"
+            android:textSize="@dimen/size_dp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pregnant_health_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_frame_gray"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="BMI参考值"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="小于24"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="偏瘦"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="20-24"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="正常"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="24-26.4"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="略胖"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="大于26.4"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_frame_gray"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="太胖"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

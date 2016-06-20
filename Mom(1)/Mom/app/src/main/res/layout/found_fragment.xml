@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_bg"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/main_found_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_dp_20"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/horizontal_line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/found_shopping_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:drawableLeft="@drawable/found_shopping_icon"
+            android:drawablePadding="@dimen/size_dp_10"
+            android:text="商城" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/found_fuli_ray"
+        style="@style/CommonItemLayouts"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            style="@style/BaseItemText"
+            android:drawableLeft="@drawable/found_fuli_icon"
+            android:drawablePadding="@dimen/size_dp_10"
+            android:text="福利" />
+
+        <View style="@style/CommonArrow" />
+    </RelativeLayout>
+
+
+</LinearLayout>

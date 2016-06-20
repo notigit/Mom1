@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:histogramView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/sports_weather_bg"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/sports_weather_sports_day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/day_sports_tv"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <TextView
+                    android:id="@+id/sports_weather_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:alpha="0.8"
+                    android:drawableLeft="@drawable/loction_icon"
+                    android:drawablePadding="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/sports_weather_sports_day_tv"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/sports_weather_buttom_lay">
+
+                        <TextView
+                            android:id="@+id/sports_weather_left_wen_ddu_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|bottom"
+                            android:textColor="@color/white"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/sports_weather_left_details_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/sports_weather_left_wen_ddu_tv"
+                            android:layout_alignTop="@+id/sports_weather_left_wen_ddu_tv"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/sports_weather_left_wen_ddu_tv"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sports_weather_buttom_lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sports_weather_suggest_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_dp_16" />
+
+                        <TextView
+                            android:id="@+id/sports_weather_aqi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_dp_16" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/sports_weather_right_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/sports_weather_address_tv"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/sports_weather_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_dp_16" />
+
+                    <TextView
+                        android:id="@+id/sports_weather_due_date_day_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:alpha="0.8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_dp_16" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sports_weather_suggest_sports_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/home_sports_weather_message_bg"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="建议适当运动"
+                            android:textColor="@color/app_top_color"
+                            android:textSize="@dimen/size_dp_16" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sports_message_ray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/sports_message_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#696B6B"
+                    android:textSize="@dimen/size_dp_18" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/sports_message_tv"
+                    android:layout_marginTop="16dp"
+                    android:text="绑定aiShoes智能鞋 能获得更精准的运动数据"
+                    android:textColor="#696B6B"
+                    android:textSize="@dimen/size_dp_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sports_message_tips_ray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/sports_message_tips_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#696B6B"
+                    android:textSize="@dimen/size_dp_16" />
+
+
+            </RelativeLayout>
+
+            <com.xiaoaitouch.mom.view.HistogramView
+                android:id="@+id/home_sports_histogramview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                histogramView:bg="@drawable/card_bg"
+                histogramView:buttom_text_color="@color/buttom_histogram_tv_color"
+                histogramView:line_top_color="@color/sports_histogram_line_color"
+                histogramView:text_color="@color/sports_histogram_tv_color"
+                histogramView:type="1" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

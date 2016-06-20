@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/can_or_not_search_hint_et"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/can_or_not_cancle_tv"
+                android:background="@drawable/can_or_not_search_bg"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLength="8"
+                android:paddingBottom="6dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="6dp"
+                android:singleLine="true"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/can_or_not_search_icon" />
+
+            <TextView
+                android:id="@+id/can_or_not_cancle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:text="取消"
+                android:textColor="@color/app_top_color"
+                android:textSize="@dimen/size_dp_16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/app_bg"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/common_single_item"
+            ptr:ptrMode="both" />
+    </LinearLayout>
+
+
+</LinearLayout>

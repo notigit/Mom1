@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/app_top_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/add_toos_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/app_top_color" />
+
+            <ImageView
+                android:id="@+id/add_toos_icon_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add_tools_image1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/app_top_color" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/add_toos_lay">
+
+            <TextView
+                android:id="@+id/add_toos_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/add_toos_details_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="none"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="#737373"
+                android:textSize="@dimen/size_dp_14" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/app_top_color" />
+
+</LinearLayout>

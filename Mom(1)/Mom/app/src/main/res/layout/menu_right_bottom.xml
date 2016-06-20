@@ -1,0 +1,45 @@
+<com.xiaoaitouch.mom.view.ArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/big_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    hyman:position="0"
+    hyman:radius="50dp">
+
+
+    <TextView
+        android:id="@+id/early_tv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/class_room_left_selected_bg"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="早"
+        android:textColor="@color/app_top_color"
+        android:textSize="@dimen/size_dp_15" />
+
+
+    <TextView
+        android:id="@+id/during_tv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/class_room_left_selected_bg"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="中"
+        android:textColor="@color/app_top_color"
+        android:textSize="@dimen/size_dp_15" />
+
+    <TextView
+        android:id="@+id/late_tv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/class_room_left_selected_bg"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="晚"
+        android:textColor="@color/app_top_color"
+        android:textSize="@dimen/size_dp_15" />
+
+
+</com.xiaoaitouch.mom.view.ArcMenu>

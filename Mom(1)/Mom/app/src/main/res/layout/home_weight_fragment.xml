@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:histogramView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/weight_calipers_bg"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/home_weight_day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/day_weight_tv"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <TextView
+                    android:id="@+id/home_weight_yesterday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="昨天体重：50KG"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_dp_16" />
+
+                <com.xiaoaitouch.mom.view.WeightView
+                    android:id="@+id/home_weight_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_weight_day_tv"
+                    android:layout_marginTop="@dimen/size_dp_8" />
+
+                <ImageView android:id="@+id/home_weight_imgCache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/home_weight_view"
+                    android:layout_alignBottom="@+id/home_weight_view"
+                    android:layout_alignLeft="@+id/home_weight_view"
+                    android:layout_alignRight="@+id/home_weight_view"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+            <com.xiaoaitouch.mom.view.HistogramView
+                android:id="@+id/home_weight_histogramview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                histogramView:bg="@drawable/card_bg"
+                histogramView:buttom_text_color="@color/buttom_histogram_tv_color"
+                histogramView:line_top_color="@color/weight_histogram_line_color"
+                histogramView:text_color="@color/weight_histogram_tv_color"
+                histogramView:type="2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/card_bg"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/home_weight_report_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="#696B6B"
+                    android:textSize="@dimen/size_dp_16" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

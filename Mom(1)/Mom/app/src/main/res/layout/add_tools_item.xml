@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/add_toos_ray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/add_toos_icon_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/add_tools_image1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/add_toos_icon_iv">
+
+            <TextView
+                android:id="@+id/add_toos_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/add_toos_details_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="none"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="#737373"
+                android:textSize="@dimen/size_dp_14" />
+
+        </RelativeLayout>
+
+
+        <com.xiaoaitouch.mom.view.ShSwitchView xmlns:shSwitch="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/add_toos_switch"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            shSwitch:shadowSpace="7dp"
+            shSwitch:tintColor="@color/app_top_color" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_toos_ray"
+        android:background="@color/line_color"></View>
+
+</RelativeLayout>

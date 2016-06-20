@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_dp_12">
+
+        <TextView
+            android:id="@+id/b_unscramble_pregnancy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已怀孕"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:id="@+id/b_unscramble_pregnancy_week_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@+id/b_unscramble_pregnancy_tv"
+            android:background="@drawable/b_unscramble_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="4dp"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/b_unscramble_pregnancy_week_tv"
+            android:text="周"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_dp_16" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_dp_12"
+            android:text="本周B超结果参考值"
+            android:textColor="#6F6F6F"
+            android:textSize="@dimen/size_dp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <ListView
+            android:id="@+id/b_unscramble_data_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/common_single_item"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</LinearLayout>

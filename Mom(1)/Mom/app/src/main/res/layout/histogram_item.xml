@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/histogram_view_ray"
+        android:layout_width="20dp"
+        android:layout_height="170dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/histogram_ball_view_ray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/histogram_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF746B"
+                android:textSize="@dimen/size_dp_12" />
+
+            <ImageView
+                android:id="@+id/histogram_ball_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/weight_ball_icon" />
+
+            <com.xiaoaitouch.mom.view.StraightArrowView
+                android:id="@+id/histogram_arrow_view"
+                android:layout_width="2dp"
+                android:layout_height="110dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/histogram_x_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="6dp"
+            android:text="12"
+            android:textSize="@dimen/size_dp_16" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

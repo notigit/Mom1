@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="周期"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/fetus_growth_cycle_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:text="26"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="性别"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/fetus_growth_sex_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="双顶径"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <EditText
+                android:id="@+id/fetus_growth_bpd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:textColor="#474747"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:textSize="@dimen/size_dp_16" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="腹围周长"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <EditText
+                android:id="@+id/fetus_growth_abdominal_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="股骨长"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <EditText
+                android:id="@+id/fetus_growth_bone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/card_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:textColor="#474747"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/fetus_growth_sure_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/sure_bg"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_dp_16" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dazzle_list_ray"
+        android:layout_width="110dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/dazzle_due_time_lay"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dazzle_due_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2015-02-25"
+                android:textColor="@color/app_top_color"
+                android:textSize="@dimen/size_dp_15" />
+
+            <TextView
+                android:id="@+id/dazzle_due_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:drawableRight="@drawable/dazzle_due_foot_icon"
+                android:text="孕5周5天"
+                android:textColor="@color/app_top_color"
+                android:textSize="@dimen/size_dp_15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:background="@color/app_top_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dazzle_time_gap_icon" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:background="@color/app_top_color" />
+    </RelativeLayout>
+
+    <com.xiaoaitouch.mom.view.MyListView
+        android:id="@+id/dazzle_send_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dazzle_list_ray"
+        android:layout_marginLeft="100dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

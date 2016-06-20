@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/app_top_color" />
+
+    <View
+        android:id="@+id/due_time_is_current_view"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tools_draw_circle_bg"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/app_top_color" />
+
+    <RelativeLayout
+        android:id="@+id/due_time_is_current_ray"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/dazzle_bg"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tools_draw_circle_bg" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/due_time_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:text="2016-03-04"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/due_time_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="第一次产检\n怀孕12周"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_dp_16" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="身高 (cm)"
+        android:textColor="#474747"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/pregnant_health_height_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/card_bg"
+        android:gravity="center"
+        android:textColor="#474747"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="孕前体重 (kg)"
+        android:textColor="#474747"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/pregnant_health_weight_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/card_bg"
+        android:gravity="center"
+        android:textColor="#474747"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/pregnant_health_sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sure_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_16" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:lineSpacingExtra="3dp"
+        android:text="什么是BMI?\n \t\t\tBMI指数（即身体质量指数，简称体脂数又称体重），是用体重公斤数除以身高米数平方得出的数字，是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。\n\t\t\tBMI指数是一个用高度及重量计算出是否正常、超重及肥胖。"
+        android:textColor="#737373"
+        android:textSize="@dimen/size_dp_14" />
+
+</LinearLayout>

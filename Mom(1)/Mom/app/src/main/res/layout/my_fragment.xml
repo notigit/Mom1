@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/my_activity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_dp_20"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/horizontal_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/my_messgae_ray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp">
+
+                <View style="@style/CommonArrow" />
+
+                <ImageView
+                    android:id="@+id/my_user_heard_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/user_default_icon" />
+
+                <TextView
+                    android:id="@+id/my_user_nick_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/my_user_heard_icon"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_dp_18" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/my_material_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_material_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_material_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_collection_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_collection_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_collection_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_equipment_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_equipment_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_equipment_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_gift_certificate_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_gift_certificate_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_gift_certificate_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/my_due_album_ray"
+                style="@style/CommonItemLayouts"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_due_album_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_due_album_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_setting_ray"
+                style="@style/CommonItemLayouts">
+
+                <TextView
+                    style="@style/BaseItemText"
+                    android:drawableLeft="@drawable/my_setting_icon"
+                    android:drawablePadding="@dimen/size_dp_10"
+                    android:text="@string/my_setting_tv" />
+
+                <View style="@style/CommonArrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

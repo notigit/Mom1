@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- QR码扫描 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <!-- SurfaceView -->
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_view">#b0000000</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="custom_header_text">#85B100</color>
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="action_bar_color">#FC7999</color>
+    <color name="bg">#F1F5F1</color>
+    <color name="black_text">#333333</color>
+
+    <color name="app_top_color">#F4426C</color>
+    <color name="black">#070707</color>
+    <color name="item_gray">#C7C7CC</color>
+    <color name="app_bg">#EBECEC</color>
+    <!-- 通用颜色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_40">#99FFFFFF</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 横线颜色 -->
+    <color name="horizontal_line">#CCCCCC</color>
+    <color name="common_item_press_down">#F2F2F2</color>
+    <!-- 线的颜色 -->
+    <color name="line_color">#E5E5E5</color>
+    <color name="textView_color">#666666</color>
+    <!-- 体重柱状图的颜色 -->
+    <color name="weight_histogram_tv_color">#40AFF9</color>
+    <color name="weight_histogram_line_color">#A6E8FE</color>
+    <!-- 运动柱状图的颜色 -->
+    <color name="sports_histogram_tv_color">#F4426C</color>
+    <color name="sports_histogram_line_color">#FDBFD0</color>
+    <!-- 症状柱状图的颜色 -->
+    <color name="symptom_histogram_tv_color">#9F58E7</color>
+    <color name="symptom_histogram_line_color">#DCBDFB</color>
+
+    <color name="buttom_histogram_tv_color">#696B6B</color>
+    <!-- 蓝色 -->
+    <color name="blue">#FF157EFB</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="guide_top_color">#DE86AF</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="labelColor">#0B273D</color>
+    <color name="labelColorChoose">#f44930</color>
+    <color name="no_select_weight_color">#7AC9ED</color>
+
+    <color name="can_or_not_can_color">#82E9C6</color>
+    <color name="can_or_not_donot_color">#FC6060</color>
+    <color name="can_or_not_careful_color">#FFCB5C</color>
+
+    <color name="draw_circle_yellow_bg">#FFBB2E</color>
+    <color name="draw_circle_blue_bg">#6DC033</color>
+    <color name="draw_circle_red_bg">#FB4949</color>
+
+    <color name="due_time_befor_color">#999999</color>
+    <color name="tips_color">#7D7D7D</color>
+
+</resources>

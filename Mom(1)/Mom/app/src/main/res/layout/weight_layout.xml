@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <Gallery
+            android:id="@+id/weight_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="bottom" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/weigth_tvLeftNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textColor="#D8D8D8"
+            android:textSize="@dimen/size_dp_14" />
+
+        <TextView
+            android:id="@+id/weigth_tvCenterNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="45KG"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_dp_15" />
+
+        <TextView
+            android:id="@+id/weigth_tvRightNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="50"
+            android:textColor="#D8D8D8"
+            android:textSize="@dimen/size_dp_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+    <View
+        style="@style/MoreHomeItemHorizontalLine"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/login_tell_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/mine_register_tell_tv"
+                android:textColor="@color/textView_color"
+                android:textSize="@dimen/size_dp_16" />
+
+            <EditText
+                android:id="@+id/login_input_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/login_get_captchas_tv"
+                android:layout_toRightOf="@+id/login_tell_tv"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/item_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+
+            <TextView
+                android:id="@+id/login_get_captchas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="@string/mine_register_captchas_tv"
+                android:textColor="@color/app_top_color"
+                android:textSize="@dimen/size_dp_16"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <RelativeLayout
+        style="@style/CommonItemLayout"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/login_captchas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/mine_register_input_captchas_tv"
+                android:textColor="@color/textView_color"
+                android:textSize="@dimen/size_dp_16" />
+
+            <EditText
+                android:id="@+id/login_input_captchas_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/login_captchas_tv"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/item_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_dp_16" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/MoreHomeItemHorizontalLine" />
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/activity_login"
+        android:textColor="@color/app_top_color"
+        android:textSize="@dimen/size_dp_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_tips_one_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_tips_tv"
+            android:textColor="@color/item_gray"
+            android:textSize="@dimen/size_dp_16" />
+
+        <TextView
+            android:id="@+id/login_tips_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_top_color"
+            android:textSize="@dimen/size_dp_16" />
+    </LinearLayout>
+
+
+</LinearLayout>

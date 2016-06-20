@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+
+    <ImageView
+        android:id="@+id/baby_imgBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0000000"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/baby_week_icon_iv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:src="@drawable/week1" />
+
+    <TextView
+        android:id="@+id/baby_infor_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baby_week_icon_iv"
+        android:layout_margin="12dp"
+        android:alpha="0.6"
+        android:gravity="left"
+        android:lineSpacingExtra="2dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_dp_16" />
+
+</RelativeLayout>

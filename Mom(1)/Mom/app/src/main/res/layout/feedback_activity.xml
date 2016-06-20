@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top_item" />
+
+
+
+    <EditText
+        android:id="@+id/feedback_submit_content_et"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="请输入您宝贵的意见……"
+        android:padding="8dp"
+        android:textColor="@color/textView_color"
+        android:textColorHint="@color/item_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/size_dp_16" />
+
+    <EditText
+        android:id="@+id/feedback_submit_emil_et"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:hint="您的邮箱（选填）"
+        android:padding="8dp"
+        android:textColor="@color/textView_color"
+        android:textColorHint="@color/item_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/size_dp_16" />
+
+    <TextView
+        android:id="@+id/feedback_submit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/feedback_submit_tv"
+        android:textColor="@color/app_top_color"
+        android:textSize="@dimen/size_dp_18" />
+
+</LinearLayout>
